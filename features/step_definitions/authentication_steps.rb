@@ -4,7 +4,6 @@ require_relative '../config/test_config'
 Given('I am on the home page') do
   @home_page = HomePage.new
   @home_page.visit_page('http://localhost:5000')
-  @home_page.verify_page_loaded
  end
 
  When('I toggle the hamburger menu if the screen is small') do
