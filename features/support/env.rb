@@ -11,3 +11,15 @@ end
 
 Capybara.default_driver = :webdriverio
 Capybara.default_max_wait_time = 10
+
+Before do
+  # Other setup steps...
+end
+
+After do |scenario|
+  # Other cleanup steps...
+  report_path = "file://#{Dir.pwd}/reports/report.html"
+  puts "Local Cucumber Report: #{report_path}"
+  # Quit the WebDriver after each scenario
+  Capybara.current_session.driver.quit
+end

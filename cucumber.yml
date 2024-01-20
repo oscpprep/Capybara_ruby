@@ -1,0 +1,5 @@
+# cucumber.yml
+
+default: --format html --out reports/report.html --publish-quiet
+html_report: --format html --out reports/report.html
+pretty_report: --format pretty --out reports/report.txt

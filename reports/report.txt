@@ -1,0 +1,28 @@
+[36m@login[0m
+Feature: User Login
+
+  Scenario: User logs in successfully                       [90m# features/feature_files/authentication.feature:4[0m
+    [32mGiven I am on the home page[90m                             # features/step_definitions/authentication_steps.rb:4[0m[0m
+    [32mWhen I toggle the hamburger menu if the screen is small[90m # features/step_definitions/authentication_steps.rb:10[0m[0m
+    [32mAnd I navigate to the login page[90m                        # features/step_definitions/authentication_steps.rb:15[0m[0m
+    [32mAnd I log in with admin[90m                                 # features/step_definitions/authentication_steps.rb:19[0m[0m
+    [32mThen I should see a successful login[90m                    # features/step_definitions/authentication_steps.rb:25[0m[0m
+
+[36m@post[0m
+Feature: Create and Delete Post
+
+  Scenario: Successfully create and delete a post           [90m# features/feature_files/create_delete_post.feature:4[0m
+    [32mGiven I am on the home page[90m                             # features/step_definitions/authentication_steps.rb:4[0m[0m
+    [32mWhen I toggle the hamburger menu if the screen is small[90m # features/step_definitions/authentication_steps.rb:10[0m[0m
+    [32mAnd I navigate to the login page[90m                        # features/step_definitions/authentication_steps.rb:15[0m[0m
+    [32mWhen I navigate to create a new post[90m                    # features/step_definitions/post_steps.rb:2[0m[0m
+    [32mThen I should see the post title[90m                        # features/step_definitions/post_steps.rb:8[0m[0m
+    [32mAnd I should be redirected to the post[90m                  # features/step_definitions/post_steps.rb:12[0m[0m
+    [32mWhen I go back to the home page[90m                         # features/step_definitions/post_steps.rb:16[0m[0m
+    [32mThen I try to remember the post number[90m                  # features/step_definitions/post_steps.rb:20[0m[0m
+    [32mThen I delete the post[90m                                  # features/step_definitions/post_steps.rb:24[0m[0m
+    [32mThen I verify the post is deleted[90m                       # features/step_definitions/post_steps.rb:28[0m[0m
+
+2 scenarios ([32m2 passed[0m)
+15 steps ([32m15 passed[0m)
+0m26.199s
