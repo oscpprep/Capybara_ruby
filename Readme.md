@@ -1,23 +1,31 @@
 # example for activating ruby env
 source /home/ubuntu/.rvm/scripts/rvm  
 
-Certainly! Let's create a README file that explains how each component of your project works:
+The blog with users website is available at https://github.com/oscpprep/POM/tree/9867beef8b4b9748d0e102071d4b0a524fde1222/dockers_compressed_into_7zips
 
 ### README.md
 
 #### Project Structure
-```
-Capybara_ruby
 ├── ./config.rb
+├── ./cucumber.yml
 ├── ./features
+│   ├── ./features/config
+│   │   └── ./features/config/test_config.rb
 │   ├── ./features/feature_files
-│   │   └── ./features/feature_files/example.feature
+│   │   ├── ./features/feature_files/authentication.feature
+│   │   ├── ./features/feature_files/create_delete_post.feature
+│   │   └── ./features/feature_files/landing.feature
 │   ├── ./features/step_definitions
-│   │   └── ./features/step_definitions/example_steps.rb
+│   │   ├── ./features/step_definitions/authentication_steps.rb
+│   │   ├── ./features/step_definitions/Capybara_ruby.code-workspace
+│   │   ├── ./features/step_definitions/landing_steps.rb
+│   │   └── ./features/step_definitions/post_steps.rb
 │   └── ./features/support
 │       ├── ./features/support/env.rb
+│       ├── ./features/support/helpers
 │       └── ./features/support/pages
 │           ├── ./features/support/pages/base_page.rb
+│           ├── ./features/support/pages/create_post_and_delete_page.rb
 │           ├── ./features/support/pages/home_page.rb
 │           └── ./features/support/pages/login_page.rb
 ├── ./Gemfile
@@ -25,9 +33,14 @@ Capybara_ruby
 ├── ./lib
 │   └── ./lib/modules
 │       └── ./lib/modules/helper_module.rb
+├── ./log
+│   └── ./log/cucumber.log
+├── ./Readme.md
+├── ./reports
+│   ├── ./reports/report.html
+│   └── ./reports/report.txt
 └── ./spec
     └── ./spec/spec_helper.rb
-```
 
 ### Project Components
 
