@@ -6,6 +6,7 @@ The blog with users website is available at https://github.com/oscpprep/POM/tree
 ### README.md
 
 #### Project Structure
+```
 ├── ./config.rb
 ├── ./cucumber.yml
 ├── ./features
@@ -41,6 +42,7 @@ The blog with users website is available at https://github.com/oscpprep/POM/tree
 │   └── ./reports/report.txt
 └── ./spec
     └── ./spec/spec_helper.rb
+```
 
 ### Project Components
 
